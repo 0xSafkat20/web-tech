@@ -1,0 +1,18 @@
+.Heading{
+    display: flex;
+    flex-direction: column;
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left{
+    padding: 30px;
+}
+
+.right{
+    padding: 30px;
+}
