@@ -1,0 +1,19 @@
+.Heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    padding: 3%;
+}
+
+.fdiv {
+    padding: 3%;
+}

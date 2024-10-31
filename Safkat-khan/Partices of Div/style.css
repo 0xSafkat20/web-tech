@@ -1,0 +1,51 @@
+/*First box*/
+.coloum {
+    display: flex;
+    flex-direction: column;
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+.cone {
+    border-style: solid;
+    border-color: red;
+    margin-top: 2%;
+}
+
+/*Second box*/
+.row {
+    display: flex;
+    flex-direction: row;
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+.rone {
+    margin-left: 2%;
+}
+
+/*Third box*/
+.srow {
+    margin-top: 1%;
+    display: flex;
+}
+
+.rtwo {
+    margin-top: 1%;
+    border-style: solid;
+    border-color: red;
+}
+
+.bbox {
+    height: 75%;
+    margin-right: 1%;
+}
+.fst{
+
+    height: 100%;
+    width: 100%;
+}
+
+.pad {
+    padding: 1%;
+}
