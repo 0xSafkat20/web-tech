@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Information</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="fornphp" href="form.php">
+</head>
+
+<body>
+    <!-- Id -->
+    <div style="text-align: center;">
+        <img src="/img/iD.png" alt="Safkat Khan id">
+    </div>
+    <!-- Text Column Section Start -->
+    <div class="text-columns">
+        <div class="text-box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic inventore quo quisquam dolores cumque quae voluptatibus! Molestias, asperiores repellendus laboriosam sapiente recusandae a necessitatibus omnis non quisquam facere distinctio sequi.</p>
+        </div>
+        <div class="text-box">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum minima nemo, blanditiis consequatur cum cupiditate consequuntur. Et modi veniam assumenda in rerum consequatur cum excepturi eaque, accusantium dolore incidunt harum?</p>
+        </div>
+        <div class="text-box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, quisquam sed aspernatur, tenetur dolores odio aliquam suscipit nulla perspiciatis iusto dicta optio temporibus illum impedit numquam voluptatum officiis ipsum. Placeat?</p>
+        </div>
+        <div class="text-box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit harum quisquam sequi perferendis provident? Atque repudiandae natus delectus? Dolores iusto tenetur maxime numquam aliquid, dolorum cupiditate minus iste ex distinctio.</p>
+        </div>
+    </div>
+    <!-- Text Column Section End -->
+
+    <!-- Image Column Section Start -->
+    <div class="image-column">
+        <div class="image-box">
+            <img src="/img/fstimg.jpg" alt="First Image">
+        </div>
+        <div class="image-box">
+            <img src="/img/fstimg.jpg" alt="Second Image">
+        </div>
+        <div class="image-box">
+            <img src="/img/fstimg.jpg" alt="Third Image">
+        </div>
+    </div>
+    <!-- Image Column Section End -->
+
+    <!-- Form and Description Section Start -->
+    <div class="form-section">
+        <div class="form-box">
+            <form action="submit_borrow_form.php" method="post">
+                <label for="studentName">Student Full Name:</label>
+                <input type="text" id="studentName" name="studentName" required>
+
+                <label for="studentID">Student ID:</label>
+                <input type="text" id="studentID" name="studentID" required>
+
+                <label for="bookTitle">Book Title:</label>
+                <select id="bookTitle" name="bookTitle" required>
+                    <option value="">Select a book title</option>
+                    <option value="book1">Book 1</option>
+                    <option value="book2">Book 2</option>
+                    <option value="book3">Book 3</option>
+                    <option value="book4">Book 4</option>
+                    <option value="book5">Book 5</option>
+                    <option value="book1">Book 6</option>
+                    <option value="book2">Book 7</option>
+                    <option value="book3">Book 8</option>
+                    <option value="book4">Book 9</option>
+                    <option value="book5">Book 10</option>
+                </select>                
+
+                <label for="borrowDate">Borrow Date:</label>
+                <input type="date" id="borrowDate" name="borrowDate" required>
+
+                <label for="token">Token:</label>
+                <input type="text" id="token" name="token" required>
+
+                <label for="returnDate">Return Date:</label>
+                <input type="date" id="returnDate" name="returnDate" required>
+
+                <label for="fees">Fees:</label>
+                <input type="number" id="fees" name="fees" min="0" step="0.01">
+
+                <label for="paid">Paid:</label>
+                <select id="paid" name="paid" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <div class="description-box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis officiis eos fugit?
+                Ad, incidunt at. Dolorum quaerat molestiae aliquam placeat accusantium ab ipsam ducimus voluptatibus
+                quasi velit molestias ad, neque temporibus? Mollitia ipsa soluta ullam necessitatibus quisquam doloremque
+                explicabo voluptatibus expedita, omnis maxime vitae provident dicta dolor quaerat, quis maiores!</p>
+        </div>
+    </div>
+    <!-- Form and Description Section End -->
+</body>
+
+</html>
