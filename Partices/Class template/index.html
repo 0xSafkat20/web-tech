@@ -48,9 +48,12 @@
     <!-- Form and Description Section Start -->
     <div class="form-section">
         <div class="form-box">
-            <form action="submit_borrow_form.php" method="post">
+            <form action="process.php" method="post">
                 <label for="studentName">Student Full Name:</label>
                 <input type="text" id="studentName" name="studentName" required>
+
+                <label for="studentEmail">Student Email:</label>
+                <input type="text" id="studentEmail" name="studentEmail" required>
 
                 <label for="studentID">Student ID:</label>
                 <input type="text" id="studentID" name="studentID" required>
@@ -100,6 +103,8 @@
         </div>
     </div>
     <!-- Form and Description Section End -->
+
+
 </body>
 
 </html>
