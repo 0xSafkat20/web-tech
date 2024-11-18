@@ -2,6 +2,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
+<<<<<<< HEAD
     padding: 10px;
     font-family: Arial, sans-serif;
 }
@@ -10,12 +11,18 @@
 .container {
     margin: 20px;
 }
+=======
+    padding: 0;
+    font-family: Arial, sans-serif;
+}    
+>>>>>>> 4caf5dedd8a4205fae92942197e3be355a48e0eb
 
 /* Styling for the text columns */
 .text-columns {
     display: flex;
     flex-direction: column;
     gap: 15px;
+<<<<<<< HEAD
     margin: 20px 0;
 }
 
@@ -24,11 +31,26 @@
     padding: 15px;
     background-color: #f9f9f9;
     border-radius: 4px;
+=======
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.text-box {
+    flex: 1;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    padding: 50px;
+>>>>>>> 4caf5dedd8a4205fae92942197e3be355a48e0eb
 }
 
 /* Styling for the image column */
 .image-column {
     display: flex;
+<<<<<<< HEAD
     gap: 10px;
     margin: 20px 0;
 }
@@ -38,12 +60,26 @@
     flex: 1;
     border: 1px solid #ddd;
     border-radius: 4px;
+=======
+    flex-direction: row;
+    gap: 10px;
+    padding-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.image-box {
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+>>>>>>> 4caf5dedd8a4205fae92942197e3be355a48e0eb
     overflow: hidden;
 }
 
 .image-box img {
     width: 100%;
     height: auto;
+<<<<<<< HEAD
 }
 
 /* Form and description section */
@@ -61,11 +97,44 @@
     padding: 15px;
     background-color: #f9f9f9;
     border-radius: 4px;
+=======
+    display: block;
+    margin: 0; /* Reset any inherited margin */
+}
+
+/* Styling for the form and description section */
+.form-section {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.description-box {
+    flex: 1;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.description-box p {
+    padding: 30px;
+}
+
+.form-box {
+    flex: 1;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+>>>>>>> 4caf5dedd8a4205fae92942197e3be355a48e0eb
 }
 
 /* Form styling */
 form label {
     display: block;
+<<<<<<< HEAD
     margin: 10px 0 5px;
     font-weight: bold;
 }
@@ -76,16 +145,40 @@ form select {
     padding: 8px;
     margin-bottom: 10px;
     border: 1px solid #ddd;
+=======
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="number"],
+form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+>>>>>>> 4caf5dedd8a4205fae92942197e3be355a48e0eb
     border-radius: 4px;
 }
 
 form input[type="submit"] {
+<<<<<<< HEAD
     background-color: #3e99fb;
     color: white;
     border: none;
     padding: 10px 15px;
     cursor: pointer;
     border-radius: 4px;
+=======
+    padding: 10px 20px;
+    background-color: #3e99fb;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+>>>>>>> 4caf5dedd8a4205fae92942197e3be355a48e0eb
 }
 
 form input[type="submit"]:hover {

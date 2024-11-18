@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Information</title>
     <link rel="stylesheet" href="style.css">
+<<<<<<< HEAD
 </head>
 
 <body>
@@ -14,6 +15,16 @@
         <img src="/img/iD.png" alt="Safkat Khan ID">
     </div>
 
+=======
+    <link rel="fornphp" href="form.php">
+</head>
+
+<body>
+    <!-- Id -->
+    <div style="text-align: center;">
+        <img src="/img/iD.png" alt="Safkat Khan id">
+    </div>
+>>>>>>> 4caf5dedd8a4205fae92942197e3be355a48e0eb
     <!-- Text Column Section Start -->
     <div class="text-columns">
         <div class="text-box">
@@ -47,6 +58,7 @@
 
     <!-- Form and Description Section Start -->
     <div class="form-section">
+<<<<<<< HEAD
         <!-- Borrower Form -->
         <div class="form-box">
             <form action="process.php" method="post">
@@ -62,29 +74,60 @@
                 <label for="bookTitle">Book Title:</label>
                 <select id="bookTitle" name="bookTitle" required>
                     <option value="" disabled selected>Select a book title</option>
+=======
+        <div class="form-box">
+            <form action="submit_borrow_form.php" method="post">
+                <label for="studentName">Student Full Name:</label>
+                <input type="text" id="studentName" name="studentName" required>
+
+                <label for="studentID">Student ID:</label>
+                <input type="text" id="studentID" name="studentID" required>
+
+                <label for="bookTitle">Book Title:</label>
+                <select id="bookTitle" name="bookTitle" required>
+                    <option value="">Select a book title</option>
+>>>>>>> 4caf5dedd8a4205fae92942197e3be355a48e0eb
                     <option value="book1">Book 1</option>
                     <option value="book2">Book 2</option>
                     <option value="book3">Book 3</option>
                     <option value="book4">Book 4</option>
                     <option value="book5">Book 5</option>
+<<<<<<< HEAD
                     <option value="book6">Book 6</option>
                     <option value="book7">Book 7</option>
                     <option value="book8">Book 8</option>
                     <option value="book9">Book 9</option>
                     <option value="book10">Book 10</option>
                 </select>
+=======
+                    <option value="book1">Book 6</option>
+                    <option value="book2">Book 7</option>
+                    <option value="book3">Book 8</option>
+                    <option value="book4">Book 9</option>
+                    <option value="book5">Book 10</option>
+                </select>                
+>>>>>>> 4caf5dedd8a4205fae92942197e3be355a48e0eb
 
                 <label for="borrowDate">Borrow Date:</label>
                 <input type="date" id="borrowDate" name="borrowDate" required>
 
                 <label for="token">Token:</label>
+<<<<<<< HEAD
                 <input type="text" id="token" name="token" placeholder="Enter token" required>
+=======
+                <input type="text" id="token" name="token" required>
+>>>>>>> 4caf5dedd8a4205fae92942197e3be355a48e0eb
 
                 <label for="returnDate">Return Date:</label>
                 <input type="date" id="returnDate" name="returnDate" required>
 
+<<<<<<< HEAD
                 <label for="fees">Fees (Optional):</label>
                 <input type="number" id="fees" name="fees" min="0" step="0.01" placeholder="Enter fees">
+=======
+                <label for="fees">Fees:</label>
+                <input type="number" id="fees" name="fees" min="0" step="0.01">
+>>>>>>> 4caf5dedd8a4205fae92942197e3be355a48e0eb
 
                 <label for="paid">Paid:</label>
                 <select id="paid" name="paid" required>
@@ -96,6 +139,7 @@
             </form>
         </div>
 
+<<<<<<< HEAD
         <!-- Book Description Form -->
         <div class="description-box">
             <form action="borrow_info.php" method="post">
@@ -128,6 +172,16 @@
     </div>
     <!-- Form and Description Section End -->
 
+=======
+        <div class="description-box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis officiis eos fugit?
+                Ad, incidunt at. Dolorum quaerat molestiae aliquam placeat accusantium ab ipsam ducimus voluptatibus
+                quasi velit molestias ad, neque temporibus? Mollitia ipsa soluta ullam necessitatibus quisquam doloremque
+                explicabo voluptatibus expedita, omnis maxime vitae provident dicta dolor quaerat, quis maiores!</p>
+        </div>
+    </div>
+    <!-- Form and Description Section End -->
+>>>>>>> 4caf5dedd8a4205fae92942197e3be355a48e0eb
 </body>
 
 </html>

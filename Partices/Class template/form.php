@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $errors = [];
 
@@ -24,5 +25,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo "Form submitted successfully!";
         // You can proceed to save the data in a database or perform other operations.
     }
+=======
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Retrieve the value from the form
+    $fullName = $_POST["full"];
+    echo $fullName; // Output the full name
+>>>>>>> 4caf5dedd8a4205fae92942197e3be355a48e0eb
 }
 ?>
