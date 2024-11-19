@@ -93,7 +93,7 @@ form select {
 }
 
 form input[type="submit"] {
-    background-color: #3e99fb;
+    background-color: #0b7df7;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -102,5 +102,5 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #044a94;
 }
