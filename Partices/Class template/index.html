@@ -6,27 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Information</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="fornphp" href="form.php">
 </head>
 
-<body>
-    <!-- Id -->
+<body class="body">
+    <!-- ID Section -->
     <div style="text-align: center;">
-        <img src="/img/iD.png" alt="Safkat Khan id">
+        <img src="/img/iD.png" alt="Safkat Khan ID">
     </div>
+
     <!-- Text Column Section Start -->
     <div class="text-columns">
         <div class="text-box">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic inventore quo quisquam dolores cumque quae voluptatibus! Molestias, asperiores repellendus laboriosam sapiente recusandae a necessitatibus omnis non quisquam facere distinctio sequi.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, rem aperiam? Quasi deleniti animi possimus consectetur tenetur sapiente vel labore vitae eos. Quae, tempore veniam! Rerum aliquid explicabo temporibus velit unde distinctio officia repellendus, est aspernatur illum similique minima in rem ipsa ab, impedit, dicta ipsam? Obcaecati odio fugiat labore.</p>
         </div>
         <div class="text-box">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum minima nemo, blanditiis consequatur cum cupiditate consequuntur. Et modi veniam assumenda in rerum consequatur cum excepturi eaque, accusantium dolore incidunt harum?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, rem aperiam? Quasi deleniti animi possimus consectetur tenetur sapiente vel labore vitae eos. Quae, tempore veniam! Rerum aliquid explicabo temporibus velit unde distinctio officia repellendus, est aspernatur illum similique minima in rem ipsa ab, impedit, dicta ipsam? Obcaecati odio fugiat labore.</p>
         </div>
         <div class="text-box">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, quisquam sed aspernatur, tenetur dolores odio aliquam suscipit nulla perspiciatis iusto dicta optio temporibus illum impedit numquam voluptatum officiis ipsum. Placeat?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, rem aperiam? Quasi deleniti animi possimus consectetur tenetur sapiente vel labore vitae eos. Quae, tempore veniam! Rerum aliquid explicabo temporibus velit unde distinctio officia repellendus, est aspernatur illum similique minima in rem ipsa ab, impedit, dicta ipsam? Obcaecati odio fugiat labore.</p>
         </div>
         <div class="text-box">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit harum quisquam sequi perferendis provident? Atque repudiandae natus delectus? Dolores iusto tenetur maxime numquam aliquid, dolorum cupiditate minus iste ex distinctio.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, rem aperiam? Quasi deleniti animi possimus consectetur tenetur sapiente vel labore vitae eos. Quae, tempore veniam! Rerum aliquid explicabo temporibus velit unde distinctio officia repellendus, est aspernatur illum similique minima in rem ipsa ab, impedit, dicta ipsam? Obcaecati odio fugiat labore.</p>
         </div>
     </div>
     <!-- Text Column Section End -->
@@ -47,43 +47,42 @@
 
     <!-- Form and Description Section Start -->
     <div class="form-section">
+        <!-- Borrower Form -->
         <div class="form-box">
-            <form action="submit_borrow_form.php" method="post">
+            <form action="process.php" method="post">
                 <label for="studentName">Student Full Name:</label>
-                <input type="text" id="studentName" name="studentName" required>
+                <input type="text" id="studentName" name="studentName" placeholder="Enter your full name">
+
+                <label for="studentEmail">Student Email:</label>
+                <input type="email" id="studentEmail" name="studentEmail" placeholder="Enter your email" >
 
                 <label for="studentID">Student ID:</label>
-                <input type="text" id="studentID" name="studentID" required>
+                <input type="text" id="studentID" name="studentID" placeholder="Enter your student ID" >
 
                 <label for="bookTitle">Book Title:</label>
-                <select id="bookTitle" name="bookTitle" required>
-                    <option value="">Select a book title</option>
-                    <option value="book1">Book 1</option>
-                    <option value="book2">Book 2</option>
-                    <option value="book3">Book 3</option>
-                    <option value="book4">Book 4</option>
-                    <option value="book5">Book 5</option>
-                    <option value="book1">Book 6</option>
-                    <option value="book2">Book 7</option>
-                    <option value="book3">Book 8</option>
-                    <option value="book4">Book 9</option>
-                    <option value="book5">Book 10</option>
-                </select>                
+                <select id="bookTitle" name="bookTitle" >
+                    <option value="" disabled selected>Select a book title</option>
+                    <option value="Science Fiction">Science Fiction</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="Mystery/Thriller">Mystery/Thriller</option>
+                    <option value="Historical Fiction">Historical Fiction</option>
+                    <option value="Western">Western</option>
+                </select>
 
                 <label for="borrowDate">Borrow Date:</label>
-                <input type="date" id="borrowDate" name="borrowDate" required>
+                <input type="date" id="borrowDate" name="borrowDate" >
 
                 <label for="token">Token:</label>
-                <input type="text" id="token" name="token" required>
+                <input type="text" id="token" name="token" placeholder="Enter token" >
 
                 <label for="returnDate">Return Date:</label>
-                <input type="date" id="returnDate" name="returnDate" required>
+                <input type="date" id="returnDate" name="returnDate" >
 
-                <label for="fees">Fees:</label>
-                <input type="number" id="fees" name="fees" min="0" step="0.01">
+                <label for="fees">Fees (Optional):</label>
+                <input type="number" id="fees" name="fees" min="0" step="0.01" placeholder="Enter fees">
 
                 <label for="paid">Paid:</label>
-                <select id="paid" name="paid" required>
+                <select id="paid" name="paid" >
                     <option value="yes">Yes</option>
                     <option value="no">No</option>
                 </select>
@@ -92,11 +91,32 @@
             </form>
         </div>
 
+        <!-- Book Description Form -->
         <div class="description-box">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis officiis eos fugit?
-                Ad, incidunt at. Dolorum quaerat molestiae aliquam placeat accusantium ab ipsam ducimus voluptatibus
-                quasi velit molestias ad, neque temporibus? Mollitia ipsa soluta ullam necessitatibus quisquam doloremque
-                explicabo voluptatibus expedita, omnis maxime vitae provident dicta dolor quaerat, quis maiores!</p>
+            <form action="borrow_info.php" method="post">
+                <label for="bookTitleDesc">Book Title:</label>
+                <input type="text" id="bookTitleDesc" name="bookTitleDesc" placeholder="Enter book title" required>
+
+                <label for="bookAuthor">Author:</label>
+                <input type="text" id="bookAuthor" name="bookAuthor" placeholder="Enter author name" required>
+
+                <label for="isbn">ISBN Number:</label>
+                <input type="number" id="isbn" name="isbn" placeholder="Enter ISBN" required>
+
+                <label for="count">Count:</label>
+                <input type="number" id="count" name="count" min="1" placeholder="Enter number of copies" required>
+
+                <label for="category">Category:</label>
+                <select id="category" name="category" required>
+                    <option value="Science Fiction">Science Fiction</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="Mystery/Thriller">Mystery/Thriller</option>
+                    <option value="Historical Fiction">Historical Fiction</option>
+                    <option value="Western">Western</option>
+                </select>
+
+                <input type="submit" value="Add Book Info">
+            </form>
         </div>
     </div>
     <!-- Form and Description Section End -->

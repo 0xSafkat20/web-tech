@@ -38,7 +38,7 @@ echo $is_admin;
     echo $contacts["John"]["email"] ."\n";
   echo $contacts["Jane"]["age"];
 
-  */
+  
 
 
   $colors = array("red", "blue");
@@ -48,6 +48,10 @@ echo $is_admin;
   array_unshift($colors, "yellow");  // adding element in the first of an array
   
   print_r($colors);
+*/
+
+$cars = array("Volvo","BMW","Toyota"); 
+var_dump($cars);
 
 
 
