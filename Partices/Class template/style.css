@@ -53,11 +53,11 @@
 
 .image-box img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
 }
 
-/* Form and description section */
+/* Form and book_info box section */
 .form-section {
     display: flex;
     gap: 20px;
@@ -66,9 +66,9 @@
     margin-right: 25px;
 }
 
-/* Both form-box and description-box should share the available space */
+/* Both form-box and book_info box should share the available space */
 .form-box,
-.description-box {
+.book_info {
     flex: 1;
     border: 1px solid #ddd;
     padding: 15px;

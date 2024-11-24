@@ -37,10 +37,10 @@
             <img src="/img/fstimg.jpg" alt="First Image">
         </div>
         <div class="image-box">
-            <img src="/img/fstimg.jpg" alt="Second Image">
+            <img src="/img/secimg.jpg" alt="Second Image">
         </div>
         <div class="image-box">
-            <img src="/img/fstimg.jpg" alt="Third Image">
+            <img src="/img/thirdpic.jpg" alt="Third Image">
         </div>
     </div>
     <!-- Image Column Section End -->
@@ -60,8 +60,11 @@
                 <input type="text" id="studentID" name="studentID" placeholder="Enter your student ID" >
 
                 <label for="bookTitle">Book Title:</label>
-                <select id="bookTitle" name="bookTitle" >
-                    <option value="" disabled selected>Select a book title</option>
+                <input type="text" id="bookTitle" name="bookTitle" placeholder="Enter book title" >
+
+                <label for="bookCategory">Book Category:</label>
+                <select id="bookCategory" name="bookCategory" >
+                    <option value="" disabled selected>Select a book Category</option>
                     <option value="Science Fiction">Science Fiction</option>
                     <option value="Fantasy">Fantasy</option>
                     <option value="Mystery/Thriller">Mystery/Thriller</option>
@@ -72,11 +75,11 @@
                 <label for="borrowDate">Borrow Date:</label>
                 <input type="date" id="borrowDate" name="borrowDate" >
 
-                <label for="token">Token:</label>
-                <input type="text" id="token" name="token" placeholder="Enter token" >
-
                 <label for="returnDate">Return Date:</label>
                 <input type="date" id="returnDate" name="returnDate" >
+
+                <label for="token">Token:</label>
+                <input type="text" id="token" name="token" placeholder="Enter token" >
 
                 <label for="fees">Fees (Optional):</label>
                 <input type="number" id="fees" name="fees" min="0" step="0.01" placeholder="Enter fees">
@@ -92,22 +95,15 @@
         </div>
 
         <!-- Book Description Form -->
-        <div class="description-box">
+        <div class="book_info">
             <form action="borrow_info.php" method="post">
-                <label for="bookTitleDesc">Book Title:</label>
-                <input type="text" id="bookTitleDesc" name="bookTitleDesc" placeholder="Enter book title" required>
 
-                <label for="bookAuthor">Author:</label>
-                <input type="text" id="bookAuthor" name="bookAuthor" placeholder="Enter author name" required>
+                <label for="bookTitleInfo">Book Title:</label>
+                <input type="text" id="bookTitleInfo" name="bookTitleInfo" placeholder="Enter book title" >
 
-                <label for="isbn">ISBN Number:</label>
-                <input type="number" id="isbn" name="isbn" placeholder="Enter ISBN" required>
-
-                <label for="count">Count:</label>
-                <input type="number" id="count" name="count" min="1" placeholder="Enter number of copies" required>
-
-                <label for="category">Category:</label>
-                <select id="category" name="category" required>
+                <label for="category">Book Category:</label>
+                <select id="bookTitle" name="bookTitle" >
+                    <option value="" disabled selected>Select a Book Category</option>
                     <option value="Science Fiction">Science Fiction</option>
                     <option value="Fantasy">Fantasy</option>
                     <option value="Mystery/Thriller">Mystery/Thriller</option>
@@ -115,7 +111,17 @@
                     <option value="Western">Western</option>
                 </select>
 
+                <label for="bookAuthor">Author:</label>
+                <input type="text" id="bookAuthor" name="bookAuthor" placeholder="Enter author name" >
+
+                <label for="isbn">ISBN Number:</label>
+                <input type="number" id="isbn" name="isbn" placeholder="Enter ISBN" >
+
+                <label for="count">Copies:</label>
+                <input type="number" id="count" name="count" min="1" placeholder="Enter number of copies" >
+
                 <input type="submit" value="Add Book Info">
+
             </form>
         </div>
     </div>
