@@ -16,12 +16,69 @@
 
     <!-- Text Column Section Start -->
     <div class="text-columns">
-        <div class="text-box">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, rem aperiam? Quasi deleniti animi possimus consectetur tenetur sapiente vel labore vitae eos. Quae, tempore veniam! Rerum aliquid explicabo temporibus velit unde distinctio officia repellendus, est aspernatur illum similique minima in rem ipsa ab, impedit, dicta ipsam? Obcaecati odio fugiat labore.</p>
+            <div class="text-box-F1" id="book-container">
+                <h2 class="see-more-container">Book Information</h2>
+                <div class="book-list">
+                <div class="book-item">
+                    <strong>Title:</strong> Sample Book Title 1<br>
+                    <strong>Category:</strong> Fiction<br>
+                    <strong>Author:</strong> John Doe<br>
+                    <strong>ISBN:</strong> 123-456-789<br>
+                    <strong>Available Copies:</strong> 5<br>
+                </div>
+                <div class="book-item">
+                    <strong>Title:</strong> Sample Book Title 2 <br>
+                    <strong>Category:</strong> Science<br>
+                    <strong>Author:</strong> Jane Smith<br>
+                    <strong>ISBN:</strong> 987-654-321<br>
+                    <strong>Available Copies:</strong> 2<br>
+                </div>
+                <div class="book-item">
+                    <strong>Title:</strong> Sample Book Title 3<br>
+                    <strong>Category:</strong> History<br>
+                    <strong>Author:</strong> Alan Turing<br>
+                    <strong>ISBN:</strong> 456-789-123<br>
+                    <strong>Available Copies:</strong> 8<br>
+                </div>
+                </div>
+                <section class="see-more-container">
+                    <a class="see-more" id="see-more">See More</a>
+                </section>
+            </div>
+
+
+
+           <!-- Book Update and Delete Section -->
+      
+            <div class="update-box">
+                <h2 class="see-more-container">Update or Delete Book Information</h2>
+                <form action="update_book.php" method="post" id="book-form">
+                    <label for="bookId">Book ID (for Update/Delete):</label>
+                    <input type="text" id="bookId" name="bookId" placeholder="Enter book ID" style="width: 700px;">
+        
+                    <label for="bookTitle">Book Title:</label>
+                    <input type="text" id="bookTitle" name="bookTitle" placeholder="Enter book title" style="width: 700px;">
+        
+                    <label for="bookCategory">Category:</label>
+                    <input type="text" id="bookCategory" name="bookCategory" placeholder="Enter book category" style="width: 700px;">
+        
+                    <label for="bookAuthor">Author:</label>
+                    <input type="text" id="bookAuthor" name="bookAuthor" placeholder="Enter book author" style="width: 700px;">
+        
+                    <label for="bookISBN">ISBN:</label>
+                    <input type="text" id="bookISBN" name="bookISBN" placeholder="Enter ISBN" style="width: 700px;">
+        
+                    <label for="bookCopies">Available Copies:</label>
+                    <input type="number" id="bookCopies" name="bookCopies" placeholder="Enter number of copies" style="width: 700px;"> <br>
+        
+                    <button class="book-update" type="submit">Update Book</button>
+                    <button class="delet-book" type="button" id="deleteBtn">Delete Book</button>
+                </form>
+           
         </div>
-        <div class="text-box">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, rem aperiam? Quasi deleniti animi possimus consectetur tenetur sapiente vel labore vitae eos. Quae, tempore veniam! Rerum aliquid explicabo temporibus velit unde distinctio officia repellendus, est aspernatur illum similique minima in rem ipsa ab, impedit, dicta ipsam? Obcaecati odio fugiat labore.</p>
-        </div>
+        
+
+        
         <div class="text-box">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, rem aperiam? Quasi deleniti animi possimus consectetur tenetur sapiente vel labore vitae eos. Quae, tempore veniam! Rerum aliquid explicabo temporibus velit unde distinctio officia repellendus, est aspernatur illum similique minima in rem ipsa ab, impedit, dicta ipsam? Obcaecati odio fugiat labore.</p>
         </div>
@@ -127,5 +184,51 @@
     </div>
     <!-- Form and Description Section End -->
 </body>
+
+<script>
+document.getElementById('see-more').addEventListener('click', function() {
+    const bookContainer = document.getElementById('book-container');
+    const moreBooks = [
+        {
+            title: 'Sample Book Title 2',
+            category: 'Science',
+            author: 'Jane Smith',
+            isbn: '987-654-321',
+            copies: 2
+        },
+        {
+            title: 'Sample Book Title 3',
+            category: 'History',
+            author: 'Alan Turing',
+            isbn: '456-789-123',
+            copies: 8
+        },
+        {
+            title: 'Sample Book Title 4',
+            category: 'Adventure',
+            author: 'Lewis Carroll',
+            isbn: '789-123-456',
+            copies: 4
+        }
+    ];
+
+    moreBooks.forEach(book => {
+        const bookItem = document.createElement('div');
+        bookItem.className = 'book-item'; // Apply the same CSS class
+        bookItem.innerHTML = `
+            <strong>Title:</strong> ${book.title}<br>
+            <strong>Category:</strong> ${book.category}<br>
+            <strong>Author:</strong> ${book.author}<br>
+            <strong>ISBN:</strong> ${book.isbn}<br>
+            <strong>Available Copies:</strong> ${book.copies}<br>
+        `;
+        bookContainer.appendChild(bookItem); // Add the new book item to the container
+    });
+
+    this.style.display = 'none'; // Hide the "See More" button
+});
+
+</script>
+
 
 </html>
